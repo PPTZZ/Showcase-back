@@ -1,0 +1,22 @@
+{	
+	"name": "Showcase",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo\"Error: no test spefiifed\" && exit 1"
+	},
+	"keywords": [],
+	"author": "pptz",
+	"license":"ISC",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.18.2",
+		"express-fileupload": "^1.4.3",
+		"knex": "^3.0.1",
+		"pg": "^8.11.3"
+	},
+	"devDependencies": {
+		"nodemon": "^3.0.2"
+	}
+}
