@@ -20,11 +20,11 @@ app.use(cors());
 app.use(fileUpload());
 
 app.get('/', (req,res)=>{
-    res.send('hello World');
-    db.select().from('user_profiles').then(data=>console.log(data));
+    res.send();
+    db.select().from('users').then(data=>console.log(data));
 });
 
-app.post('/signin', (req, res) =>{
+app.post('/login', (req, res) =>{
     db.select('email', 'password').from('secrets')
     .where('email', '=', req.body.email)
     .then(data =>{
